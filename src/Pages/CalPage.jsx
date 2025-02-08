@@ -5,7 +5,6 @@ import AddFoods from '../components/AddFoods'
 const CalPage = () => {
   return (
     <div className='h-screen w-full'>
-        <Navbar/>
         <AddFoods/>
         
     </div>
