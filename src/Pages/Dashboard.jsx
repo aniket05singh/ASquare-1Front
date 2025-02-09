@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 
 const Dashboard = () => {
-  const user = JSON.parse(localStorage.getItem("user"));
-  const {id,setId,setLogFlag,setDefi} = React.useContext(UserContext);
+  // const user = JSON.parse(localStorage.getItem("user"));
+  const {id,setId,setLogFlag,setDefi,user} = React.useContext(UserContext);
   const [selectedDate, setSelectedDate] = useState("");
   const [value, setValue] = useState({});
   const [isSubmitted,setIsSubmitted] = useState(true);
@@ -177,14 +177,6 @@ const avgFemale = [{
       </p>
 
       {/* Profile Image */}
-      <motion.img
-        src={user?.photoURL}
-        alt="Profile"
-        className="w-20 h-20 rounded-full border-4 border-blue-500 shadow-md hover:shadow-xl transition transform hover:scale-110"
-        initial={{ rotateY: 180 }}
-        animate={{ rotateY: 0 }}
-        transition={{ duration: 0.6 }}
-      />
 
       {/* Logout Button */}
       <motion.button

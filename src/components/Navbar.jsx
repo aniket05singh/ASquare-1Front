@@ -23,7 +23,6 @@ const Navbar = () => {
       <div className="bg-gray-800 text-white p-4 w-full border-green-700 flex justify-between fixed top-0 z-10">
         {/* Logo Section */}
         <div className="flex gap-4 ml-4">
-          <div>logo</div>
           <div>ASquare</div>
         </div>
         
